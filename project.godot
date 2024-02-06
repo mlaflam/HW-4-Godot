@@ -14,3 +14,10 @@ config/name="HW-4-Godot"
 run/main_scene="res://Scenes/first_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=2250
+window/size/viewport_height=1250
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
