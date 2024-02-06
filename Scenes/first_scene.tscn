@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dqmkubib8i03x"]
+[gd_scene load_steps=13 format=3 uid="uid://dqmkubib8i03x"]
 
 [ext_resource type="Script" path="res://Scripts/Rotate.gd" id="1_pfstd"]
 [ext_resource type="Texture2D" uid="uid://cb1frsjk8owfi" path="res://meteor.png" id="2_2t0bi"]
@@ -7,10 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://dim8el1jcs28q" path="res://orange_sauro_baby.png" id="5_s2isb"]
 [ext_resource type="Texture2D" uid="uid://bojd7ave6xpsc" path="res://starry_sky_background.jpeg" id="6_6tmei"]
 [ext_resource type="Texture2D" uid="uid://d4nderdp8j3gl" path="res://pink_triceretops.png" id="7_kke5o"]
-[ext_resource type="Texture2D" uid="uid://dv70ofv70uurw" path="res://aqua_trex.png" id="8_inx1n"]
-[ext_resource type="Texture2D" uid="uid://1u8rq5lff1hn" path="res://blue_pterodactyl.png" id="9_04cnb"]
-[ext_resource type="Texture2D" uid="uid://bxoarjejjy27g" path="res://green_trex.png" id="10_21q8u"]
-[ext_resource type="Texture2D" uid="uid://c7n0wfdt3env0" path="res://green_trex_baby.png" id="11_hcyqx"]
+[ext_resource type="Texture2D" path="res://aqua_trex.png" id="8_inx1n"]
+[ext_resource type="Texture2D" path="res://blue_pterodactyl.png" id="9_04cnb"]
+[ext_resource type="Texture2D" path="res://green_trex.png" id="10_21q8u"]
+[ext_resource type="Texture2D" path="res://green_trex_baby.png" id="11_hcyqx"]
+[ext_resource type="Script" path="res://Scripts/Elipse.gd" id="12_s3fk4"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_pfstd")
@@ -29,7 +30,7 @@ scale = Vector2(0.255814, 0.232143)
 texture = ExtResource("2_2t0bi")
 
 [node name="NodePurpleStego" type="Node2D" parent="TextureRect/Meteor"]
-position = Vector2(-0.00012207, 4.30772)
+position = Vector2(-3.90897, 3.05176e-05)
 script = ExtResource("1_pfstd")
 rotation_speed = 0.01
 
@@ -120,3 +121,12 @@ scale = Vector2(0.305813, 0.336996)
 texture = ExtResource("11_hcyqx")
 script = ExtResource("1_pfstd")
 rotation_speed = 0.008
+
+[node name="NodeOrangeSauroElipse" type="Node2D" parent="TextureRect/Meteor"]
+position = Vector2(-269.727, -236.923)
+
+[node name="OrangeSauro" type="Sprite2D" parent="TextureRect/Meteor/NodeOrangeSauroElipse"]
+position = Vector2(-551.182, -559.999)
+scale = Vector2(0.619055, 0.682179)
+texture = ExtResource("4_jd4th")
+script = ExtResource("12_s3fk4")
